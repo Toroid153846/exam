@@ -117,6 +117,7 @@
   量子スピンなら単純に計算してはいけない(古典スピンと区別してシングレットトリプレットを考える)\\
   エルミート行列の累乗のトレース求めるだけなら、固有値の累乗の総和になる\\
   ボース理想気体においては化学ポテンシャルは基底エネルギーより小さい(ボースアインシュタイン凝縮においては基底エネルギーと等しくなる)\\
+  臨界点の定義は$\left( \pdv{P}{V} \right)_T=\left( \pdv[2]{P}{V} \right)_T=0 $
 
   \subsection{量子力学}
   束縛条件は無限遠点におけるポテンシャルの値よりもエネルギー固有値が低いこと。\\
@@ -125,7 +126,7 @@
   \begin{align}
     \phi(p)
     &=\bra{p}\ket{\phi}\\
-    &=\bra{p}\left( \int^\infty_{-\infty}\ketbra{x} \right) \ket{\phi}\\
+    &=\bra{p}\left( \int^\infty_{-\infty}\ketbra{x} dx \right) \ket{\phi}\\
     &=\int^\infty_{-\infty}\bra{p}\ket{x}\bra{x}\ket{\phi}dx\\
     &=\frac{1}{\sqrt{2\pi}}\int^\infty_{-\infty}\exp\left( -\frac{ipx}{\hbar} \right)\bra{x}\ket{\phi}dx\\
   \end{align}
@@ -134,9 +135,9 @@
   一次元一粒子の時間依存無しシュレディンガー方程式解においては$n$番目の励起状態において$\delta x\cdot \delta p\simeq n\hbar$となる\\
   方位量子数$s$、磁気量子数$m$として
   \begin{align}
-    S^z=\hbar m\ket{s,m}\\
-    S^\pm\ket{s,m}=(S^x\pm iS^y)\ket{s,m}=\hbar\sqrt{s(s+1)-m(m\pm 1)}\ket{s,m\pm 1}\\
-    \bm{S}^2\ket{s,m}=\left((S^z)^2+\frac{1}{2}(S^+S^-+S^-S^+)\right)\ket{s,m}=\hbar^2s(s+1)\ket{s,m}\\
+    S^z&=\hbar m\ket{s,m}\\
+    S^\pm\ket{s,m}&=(S^x\pm iS^y)\ket{s,m}=\hbar\sqrt{s(s+1)-m(m\pm 1)}\ket{s,m\pm 1}\\
+    \bm{S}^2\ket{s,m}&=\left((S^z)^2+\frac{1}{2}(S^+S^-+S^-S^+)\right)\ket{s,m}=\hbar^2s(s+1)\ket{s,m}\\
   \end{align}
   ぐらいは覚えておく\\
   $H=H_0+H'$として、摂動論の公式
