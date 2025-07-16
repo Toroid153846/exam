@@ -48,6 +48,7 @@
   なんか見覚えがあることは危険信号なので一旦飛ばす\\
   きちんとどの問題で記述が必要かどうか確認する\\
   怪しいと思っても時間あればとりあえず計算しておく\\
+  計算が多すぎておかしいと思ったら問題の条件をきちんと確認する\\
 
   \section{物理数学}
   $y'=f\left( \frac{y}{x} \right) $のような微分方程式も$u=\frac{y}{x}$と置いて
@@ -120,6 +121,15 @@
   \subsection{量子力学}
   束縛条件は無限遠点におけるポテンシャルの値よりもエネルギー固有値が低いこと。\\
   エルミート共役を取る時に複素共役取るの忘れない\\
+  運動量表示$\phi(p)$として
+  \begin{align}
+    \phi(p)
+    &=\bra{p}\ket{\phi}\\
+    &=\bra{p}\left( \int^\infty_{-\infty}\ketbra{x} \right) \ket{\phi}\\
+    &=\int^\infty_{-\infty}\bra{p}\ket{x}\bra{x}\ket{\phi}dx\\
+    &=\frac{1}{\sqrt{2\pi}}\int^\infty_{-\infty}\exp\left( -\frac{ipx}{\hbar} \right)\bra{x}\ket{\phi}dx\\
+  \end{align}
+  と表せる。\\
   ハミルトニアンかける時にエネルギー固有状態があるならその基底の表示でかけましょうね\\
   一次元一粒子の時間依存無しシュレディンガー方程式解においては$n$番目の励起状態において$\delta x\cdot \delta p\simeq n\hbar$となる\\
   方位量子数$s$、磁気量子数$m$として
